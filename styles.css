@@ -8,12 +8,26 @@ label {
   text-align: right;
   padding-right:10px;
 }
+
 input {
   width:120px;
   margin-right: 20px;
 }
 
+table {
+  width: 75%;
+  border-collapse: collapse;
+}
 
-h2 {
-  clear: both;
+table, th {
+  font-weight: bold;
+  text-align: left;
+}
+
+table, tr {
+  border: 1px solid;
+}
+
+td {
+  font-weight: normal;
 }
