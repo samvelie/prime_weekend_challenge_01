@@ -1,0 +1,19 @@
+body {
+  font-family:monospace;
+  background-color: beige;
+}
+
+label {
+  width:180px;
+  text-align: right;
+  padding-right:10px;
+}
+input {
+  width:120px;
+  margin-right: 20px;
+}
+
+
+h2 {
+  clear: both;
+}
