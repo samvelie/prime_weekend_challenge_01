@@ -3,7 +3,7 @@ $(document).ready(function(){
   var salaryAdder = 0;
 //listen for submit click
   $('#submit').on('click', function(){
-    //
+    //creates variables that take inputs and get concatenated into table rows
       var firstName = $('#firstName').val();
       var lastName = $('#lastName').val();
       var idNumber = $('#idNumber').val();
@@ -31,8 +31,6 @@ $(document).ready(function(){
   $('#employeeTable').on('click', '.deleteButton', function(){
     console.log('I heard the delete click!');
     $(this).closest('tr').remove();
-    // salaryAdder-=parseFloat($())
-    // $('#monthlySalary').find('p').text('Monthly Salary: ' + monthlySalary);
   });
 
 });
