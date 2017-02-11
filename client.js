@@ -9,7 +9,7 @@ $(document).ready(function(){
       var idNumber = $('#idNumber').val();
       var jobTitle = $('#jobTitle').val();
       var salary = $('#salary').val();
-      var fullEmployeeInfo = '<tr><td>' + firstName +'</td><td>' + lastName + '</td><td>' + idNumber + '</td><td>' + jobTitle + '</td><td class="salaries">' + salary + '</td></tr>';
+      var fullEmployeeInfo = '<tr><td>' + firstName +'</td><td>' + lastName + '</td><td>' + idNumber + '</td><td>' + jobTitle + '</td><td class="salaries">' + salary + '</td><td class="deleteButtons"><button type="button" name="deleteButton" class="deleteButton">Delete</button></td></tr>';
 
     //appends entered employee to the table
       $('#employeeTable').append(fullEmployeeInfo);
@@ -23,18 +23,16 @@ $(document).ready(function(){
 
     //updates the salaryAdder variable with each click
       salaryAdder += parseFloat(salary);
-      monthlySalary = salaryAdder/12;
-
+      var monthlySalary = salaryAdder/12;
     $('#monthlySalary').find('p').text('Monthly Salary: ' + monthlySalary);
   });
 
-  // $('#employeeTable').on('change',function(){
-  //   var monthlySalary = 0;
-  //   $(this).find('.salaries').each(function(){
-  //     monthlySalary += parseInt($(this));
-  //   })
-  //
-  //   $('#monthlySalary').text('Monthly Salary:', monthlySalary/12);
-  // });
+//removes the row of the delete button that is clicked
+  $('#employeeTable').on('click', '.deleteButton', function(){
+    console.log('I heard the delete click!');
+    $(this).closest('tr').remove();
+    // salaryAdder-=parseFloat($())
+    // $('#monthlySalary').find('p').text('Monthly Salary: ' + monthlySalary);
+  });
 
 });
