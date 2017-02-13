@@ -9,10 +9,11 @@ $(document).ready(function(){
       var idNumber = $('#idNumber').val();
       var jobTitle = $('#jobTitle').val();
       var salary = $('#salary').val();
-      var fullEmployeeInfo = '<tr><td>' + firstName +'</td><td>' + lastName + '</td><td>' + idNumber + '</td><td>' + jobTitle + '</td><td class="salaries">' + salary + '</td><td class="deleteButtons"><button type="button" name="deleteButton" class="deleteButton">Delete</button></td></tr>';
+      var fullEmployeeInfo = '<tr><td>' + firstName +'</td><td>' + lastName + '</td><td>' + idNumber + '</td><td>' + jobTitle + '</td><td class= salary>' + salary + '</td><td class="deleteButtons"><button type="button" name="deleteButton" class="deleteButton">Delete</button></td></tr>';
 
     //appends entered employee to the table
       $('#employeeTable').append(fullEmployeeInfo);
+
 
     //clears out the entered information from the inputs
       $('#firstName').val('');
