@@ -15,7 +15,7 @@ input {
 }
 
 table {
-  width: 75%;
+  width: 70%;
   border-collapse: collapse;
 }
 
@@ -24,15 +24,27 @@ table, th {
   text-align: left;
 }
 
-#deleteHeader .deleteButtons {
-  border-left: 1px solid;
-  text-align: right;
-}
-
 table, tr {
   border: 1px solid;
 }
 
+th {
+  width: 120px;
+}
+
 td {
   font-weight: normal;
+  width: 120px;
+}
+
+th#deleteHeader {
+  border-left: 1px solid;
+  width: 60px;
+  text-align: right;
+}
+
+td.deleteButton {
+  border-left: 1px solid;
+  text-align: right;
+  width: 60px;
 }
